@@ -1,0 +1,346 @@
+/* .height {
+    height: 1500px;
+    background-color: #eae1e1;
+} */
+
+body {
+    background-color: #cabfbf;
+    height: 1500px;
+}
+
+.fontsize {
+    font-size: 1.5em;
+}
+
+/******Partie ordinateur*****/
+
+.widthNosMenus {
+    height: 107em;
+    background-color: #323232;
+    text-align: center;
+}
+
+.widthNosMenusMobile {
+    background-color: #323232;
+    width: 21.2em !important;
+    margin-left: -0.4em;
+}
+
+.widthNosMenusMobileMenus {
+    background-color: #323232;
+    width: 22.6em !important;
+    margin-left: -2.5em !important;
+    padding-left: 1.5em !important;
+    /* padding-right: 4.5em !important; */
+    padding-right: -2.5em !important;
+    /* padding-right: -3em !important; */
+}
+
+.hideunwantedbarMenus {
+    position: absolute !important;
+    background-color: #cabfbf;
+    left: -5.8em !important;
+    width: 21em;
+}
+
+.hideunwantedbar {
+    background-color: #cabfbf;
+}
+
+.widthNosMenusFormules {
+    height: 38em;
+    background-color: #323232;
+    text-align: center;
+}
+
+.colorNosMenus {
+    background-color: #e8e0d0;
+}
+
+.marginNegativ {
+    margin-left: -19px;
+    margin-right: -15px;
+}
+
+.marginTopTitreNosmenus {
+    margin-top: 0.3em;
+}
+
+.marginTopCategoryList {
+    margin-bottom: 4em !important;
+}
+
+.card-sommaire {
+    margin-top: -25%;
+}
+
+.bandeau_sommaire {
+    margin-top: 0;
+}
+/*****Partie mobile*****/
+
+/* .buttonweight {
+    height: 2.3em !important;
+    width: 0.1em !important;
+    padding-bottom: 1.9em !important;
+    padding-right: 10em !important;
+} */
+
+/* .buttonformulewidth {
+    width: 0em !important;
+    padding-right: -5em;
+} */
+
+.fontsizebuttonmobile {
+    font-size: 1.3em !important;
+
+}
+
+.underbuttonweight {
+    width: 21em;
+}
+
+.underbuttonweightMenus {
+    width: 21em !important;
+}
+
+.margintopbutton {
+    margin-top: 0em !important;
+}
+
+.dropdownindexbutton {
+    
+    z-index: -9;
+    
+}
+
+.dropdownindextext {
+    z-index: 30;
+    position: fixed;
+    background-color: white;
+    margin-top: -1em;
+}
+
+.FormulesButtonindex {
+    z-index: 0;
+}
+
+.dropdownindextextFormules {
+    margin-top: -0.5em;
+}
+
+
+/* .positionstickySommaire {
+    position: sticky;
+    top: 3em;
+} */
+
+.positionstickyMenu {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.margintopAffichagePC {
+    margin-top: 2em;
+}
+
+.CategorieSize {
+    font-size: 1.5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.margintopSommaire {
+    margin-top: 1.3em !important;
+}
+
+li, .sizeprix {
+    font-size: 1.5em;
+}
+
+.fontsizemobile {
+    font-size: 1.5em;
+}
+
+.marginbottombutton {
+    margin-bottom: 25em !important;
+}
+
+.text-white {
+    border : none;
+}
+
+
+/**CSS recopié de la page principale **/
+
+
+/** c'est le font size qui faisait tout buguer je l'ai changé**/
+
+.btn {
+    /* display: inline-block;
+    background: transparent;
+    text-transform: uppercase; */
+    /* font-weight: 500; */
+    /* font-style: normal; */
+    font-size: 1.5rem; 
+
+
+    /* Conflit avec boissons sur letter spacing. C'était activé sur boisson */
+     /* letter-spacing: 0.3em;  */
+
+
+
+    color: #fff;
+    border-radius: 0;
+    /* padding: 18px 80px 20px; */
+    padding-right: 5em;
+    padding-left: 2em;
+    transition: all 0.7s ease-out !important;
+    background: linear-gradient(270deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    /* margin: 0.625rem; */
+    border: none;
+    border: 1px solid rgba(223,190,106,0.3);
+    background-color: grey;
+    width: 1em !important;
+}
+
+.btn:hover {
+    color: #fff;
+    border: 1px solid rgba(223,190,106,0);
+    color: white;
+    background-position: 99% 50%;
+  }
+
+
+.background {
+
+	/* background-position: center; */
+	background: linear-gradient(90deg, rgba(228,228,244,0.4) 0%, rgba(228,228,244,0.4) 35%, rgba(228,228,244,0.4) 100%),
+	url("../../../assets/img/Texture_Bois_v2.png");
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* margin:0; */
+    padding-top: 1px;
+    padding-bottom: 1.5em;
+    height: 91.3vh;
+
+}
+
+.margintoplogomobile {
+    margin-top: 10em;
+}
+
+.marginrightmenus {
+    margin-right: 2.5em;
+}left
+
+
+.aligntextbottommenu {
+    text-align: bottom;
+}
+
+.fontsizemobilenormaltext {
+    font-size: 1.2em;
+}
+
+/* .margintextecarte {
+    margin-top: 5em;
+} */
+
+table, th, td {
+    /* border: 1px solid black; */
+    border-collapse: separate; 
+    border-spacing: 10px;
+  }
+
+.widthnosmenuordi {
+    width: 47.8em;
+    z-index: 90;
+    text-align: center;
+    margin-left: -4em !important;
+}
+
+.marginleftRowNosMenus {
+    margin-left: 0em;
+}
+
+.widthnosmenuordiformules {
+    width: 16.7em;
+    z-index: 90;
+    text-align: center;
+}
+
+
+/* Font */
+
+.font {
+    font-family: 'Tempus Sans ITC';
+    font-weight:normal;
+    font-style:normal;
+}
+
+.fontmobile {
+    font-family: 'Tempus Sans ITC';
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+.positionAbsoluteSommaire {
+    
+    margin-top: -0.1em;
+    margin-left: -0.1em;
+}
+
+.taillecontainerNosMenusOrdi {
+    height: 10em;
+}
+
+.scrollableDiv {
+    overflow: scroll;
+    height: 42em;
+}
+
+.scrollableDivMobile {
+    overflow: scroll;
+    height: 28em;
+}
+
+.marginleftTitresNosMenus {
+    margin-left: 11em;
+}
+
+/* table, th, td {
+    border: 1px solid white;
+  } */
+
+.hidden {
+    display: none;
+}
+
+/*               CSS BOISSON                 */
+
+.boisson {
+    width: 100%;
+}
+
+/* .borduresTables {
+   
+    border-top: 1px white solid;
+    border-right: 1px white solid;
+    border-left: 1px white solid;
+    border-bottom: 1px white solid;
+    
+} */

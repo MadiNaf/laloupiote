@@ -1,0 +1,66 @@
+.container {
+	margin-left: 5%;
+}
+
+/* .container-fluid {
+  background-image: url("/../../assets/img/arabesques-648176_1920.jpg");
+  background: cover, no-repeat;
+  opacity: 0.2;
+} */
+
+.background_contact {
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  /* background-origin: content-box, content-box; */
+  opacity: 0.3;
+}
+
+.title {
+	color : white;
+	/*font-size: 2.2em;*/
+	font-style: bold;
+	padding-bottom: 2%;
+  padding-top: 3%;
+  /* padding-left: 17%; */
+}
+
+.form-container {
+	background-color: #323232;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+.label{
+	color : white;
+	font-size: 1.2em;
+	font-style: bold;
+	/* padding-left: 15%; */
+
+}
+
+/* input {
+    width: 200px;
+    padding: 0 10px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 1em;
+    line-height: 3;
+}
+
+textarea {
+    width: 200px;
+    padding: 0 20px;
+}
+
+::placeholder {
+  font-size: 1em;
+} */
+
+
+

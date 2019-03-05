@@ -1,0 +1,142 @@
+<div class="container bg-dark">
+    <div class="row text-center text-white m-3">
+      <div class="col-12"><h1>ADMINISTRATION BOISSON</h1></div>
+    </div>
+</div>
+  
+
+  <!-- CREATION DU FORMULAIRE POUR LA METHODE AJOUTER UNE LIGNE DANS CATEGORIE BOISSON -->
+
+            
+<div class="container-fluid bg-dark">
+    <div class="row text-white ">
+      <div class="col-md-12 text-center mb-3 title" >Catégorie boisson</div> 
+    </div> 
+
+    <div class="row text-white ">
+      <div class="col-md-12 text-center mb-4 mt-4 menuDeroulant">
+        <select id="category_boisson_id" (change)="drinkChoice($event)">
+            <option value="categorieBoissonId">Choisir une catégorie de boisson</option>
+            <option *ngFor="let mycat of categories" value={{mycat.id}}> {{mycat.categoryName}}</option>
+        </select>
+      </div>
+    </div> 
+  
+
+ 
+  
+
+<!-- AFFICHAGE DU TABLEAU BOISSON -->
+  
+  <div class="container-fluid bg-dark"> 
+  
+     <div *ngFor="let currentTabBoissons of boissons | boissonscat">
+  
+      <h2 *ngIf="currentTabBoissons.length > 0" class="categoryName text-center mb-3 mt-5 text-white" >
+           {{ this.getCategoryById( currentTabBoissons[0].category_boisson_id).categoryName}}  </h2>
+      <h3 *ngIf="currentTabBoissons.length > 0" class="category text-left mb-4 text-white">
+            {{currentTabBoissons[0].category}}</h3>
+            
+      <div class="row text-white">
+        <div class="col-md-3 text-left enTete"></div>
+        <div class="col-md-1 text-center enTete">Qtt 1</div>
+        <div class="col-md-1 text-center enTete">Prix 1</div>
+        <div class="col-md-1 text-center enTete">Qtt 2</div>
+        <div class="col-md-1 text-center enTete">Prix 2</div>
+        <div class="col-md-1 text-center enTete">Qtt 3</div>
+        <div class="col-md-1 text-center enTete">Prix 3</div>
+        <div class="col-md-1 text-center enTete "></div>
+        <div class="col-md-1 text-center enTete "></div>
+        <div class="col-md-1 text-center enTete"></div>
+        
+      </div> 
+  
+      <div class="row text-white text-left table" *ngFor="let currentBoisson of currentTabBoissons">
+        <div class="col-md-3 name">
+          <input type="text" class="form-control" id="name" name="name" 
+          [(ngModel)]="currentBoisson.name" >
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="quantities_1" name="quantities_1" 
+          [(ngModel)]="currentBoisson.quantities_1">
+        </div>
+        <div class="col-md-1">
+            <input type="text" class="form-control" id="price_1" name="price_1" 
+            [(ngModel)]="currentBoisson.price_1">
+          </div>
+        <div class="col-md-1">
+            <input type="text" class="form-control" id="quantities_2" name="quantities_2" 
+            [(ngModel)]="currentBoisson.quantities_2">
+          </div>
+        <div class="col-md-1">
+            <input type="text" class="form-control" id="price_2" name="price_2" 
+            [(ngModel)]="currentBoisson.price_2">
+          </div>
+        <div class="col-md-1">
+            <input type="text" class="form-control" id="quantities_3" name="quantities_3" 
+            [(ngModel)]="currentBoisson.quantities_3">
+          </div>
+        <div class="col-md-1">
+            <input type="text" class="form-control" id="price_3" name="price_3" 
+            [(ngModel)]="currentBoisson.price_3">
+          </div>
+ 
+          <div class="col-md-1 text-center actionButton" >
+            <button (click)="create(currentBoisson)" (click)="refresh(currentBoisson)">
+              <i class="fas fa-plus-square"></i>
+          </button>
+          </div>
+
+        <div class="col-md-1 text-center actionButton ">
+          <button (click)="update(currentBoisson)" (click)="refresh(currentBoisson)">
+          <i class="fas fa-check-square"></i>
+          </button>
+        </div>
+
+
+        <div class="col-md-1 text-center actionButton">
+          <button (click)="delete(currentBoisson)" (click)="refresh(currentBoisson)">
+             <i class="fas fa-trash-alt"></i>
+          </button> 
+
+
+
+          <!-- Modal -->
+						<!-- <div class="modal fade" id="deleteSuccessful" tabindex="-1" role="dialog" 
+            aria-labelledby="Successfuly" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-modal">
+                  <h5 class="modal-title dark-text" id="updateSuccessfuly">La boisson a été supprimée avec succès</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-modal">
+                  <h5 class="text-success d-flex justify-content-center container ">Carte des boissons mise à jour</h5>
+                  <div class="circle-loader load-complete d-flex justify-content-center container ">
+                    <div class="checkmark draw "></div>
+                  </div>
+                </div>
+                <div class="modal-footer bg-black-dark d-flex justify-content-center container">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div> 
+        
+ 
+
+      </div>
+  
+    </div>
+  </div>  
+  
+        
+
+        
+        
+
+        
+     

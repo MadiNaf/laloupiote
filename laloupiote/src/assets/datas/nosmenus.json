@@ -1,0 +1,439 @@
+{
+  "assiette": [{
+      "name": "Foie gras maison, pain d’épice et confiture de saison",
+      "price": "15.50 €",
+      "category_id": "1",
+      "category_name": "Entrées"
+    },
+    {
+      "name": "Saumon fumé maison et ses blinis",
+      "price": "13.50 €",
+      "category_id": "1",
+      "category_name": "Entrées"
+    },
+    {
+      "name": "Ravioles du moment",
+      "price": "13.00 €",
+      "category_id": "1",
+      "category_name": "Entrées"
+    },
+    {
+      "name": "Terrine maison",
+      "price": "7.50 €",
+      "category_id": "1",
+      "category_name": "Entrées"
+    },
+    {
+      "name": "Pressé d'andouille et pommes de terre, crème de camembert",
+      "price": "11.00 €",
+      "category_id": "1",
+      "category_name": "Entrées"
+    },
+    {
+      "name": "Salade de saumon fumé maison et sa crème fouettée",
+      "price": "15.00€",
+      "category_id": "2",
+      "category_name": "Salades"
+    },
+    {
+      "name": "Salade Landaise (gésiers, magrets,confit de canard, noix hachées, tomates confites",
+      "price": "17.00 €",
+      "category_id": "2",
+      "category_name": "Salades"
+    },
+    {
+      "name": "Salade Périgourdine (Foie gras, gésiers, magret, confit de canard, noix hachées,tomates confites)",
+      "price": "19.90 €",
+      "category_id": "2",
+      "category_name": "Salades"
+    },
+    {
+      "name": "Salade de Croustrillants du moment",
+      "price": "12.00 €",
+      "category_id": "2",
+      "category_name": "Salades"
+    },
+    {
+      "name": "Salade Végétarienne (Légumes de saison)",
+      "price": "12.50 €",
+      "category_id": "2",
+      "category_name": "Salades"
+    },
+    {
+      "name": "Magret de canard (sauce miel, romarin et thym infusés)",
+      "price": "15.50 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Pièce du Boucher (selon arrivage)",
+      "price": "16.50 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Filet de bœuf (sauce : poivre, roquefort ou camembert)",
+      "price": "19.50 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Andouillette (sauce moutarde)",
+      "price": "12.50 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Choucroute de la mer",
+      "price": "19.90 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Poisson du jour «selon arrivage »",
+      "price": "18.50 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Hamburger maison (sauce cheddar) frites, salade",
+      "price": "13.50 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Hamburger Royal (foie gras, sauce morilles) frites, salade",
+      "price": "19.90 €",
+      "category_id": "3",
+      "category_name": "Plats"
+    },
+    {
+      "name": "Nos Garnitures : Frites maison, gratin maison, légumes du jour, riz, tagliatelles (Sauce Morilles en supplément)",
+      "price": "3.00 €",
+      "category_id": "4",
+      "category_name": "Nos Garnitures"
+    },
+    {
+      "name": "NOS MENUS DU JOUR (voir ardoise) Prix net, boissons non-comprises",
+      "price": "14.00 €",
+      "category_id": "5",
+      "category_name": "Menus du jour"
+    },
+    {
+      "name": "MENU ENFANTS (prix net boisson non-comprises)",
+      "price": "10.00 €",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Omelette (garniture au choix dans la carte) ou",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Steak haché (garniture au choix dans la carte) ou",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Jambon blanc (garniture au choix dans la carte) ou",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Poisson du jour (garniture au choix dans la carte) ET",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "fondant au chocolat sur son lit de crème anglaise ou",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Glace ou sorbet 2 boules (au choix dans la carte) ou",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Glace smarties",
+      "price": "",
+      "category_id": "6",
+      "category_name": "Menu enfants"
+    },
+    {
+      "name": "Vanille intense",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Caramel/Beurre salé",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Menthe/chocolat",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Café",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Chocolat",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Coeur de Fraises",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Cassis",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Rhum raison",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Cerise du Verger",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Pomme verte",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Citron vert",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Coeur d'Ananas",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Noix de coco",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Mangue exotique",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Fruits de la passion",
+      "price": "",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "2 boules",
+      "price": "3.50 €",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "3 boules",
+      "price": "4.50 €",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "4 boules",
+      "price": "5.50 €",
+      "category_id": "7",
+      "category_name": "Nos coupes de sorbets ou glaces"
+    },
+    {
+      "name": "Assortiment 3 fromages",
+      "price": "6.00 €",
+      "category_id": "8",
+      "category_name": "Fromage du moment"
+    },
+    {
+      "name": "Nougat glacé maison",
+      "price": "6.50 €",
+      "category_id": "9",
+      "category_name": "Nos desserts"
+    },
+    {
+      "name": "Café gourmand",
+      "price": "6.80 €",
+      "category_id": "9",
+      "category_name": "Nos desserts"
+    },
+    {
+      "name": "Trio de profiteroles maison",
+      "price": "6.50 €",
+      "category_id": "9",
+      "category_name": "Nos desserts"
+    },
+    {
+      "name": "Miroir au chocolat maison (fine génoise aux amandes, une mousse fruit de saison, mousse au chocolat noir, nappage chocolat noir)",
+      "price": "6.50 €",
+      "category_id": "9",
+      "category_name": "Nos desserts"
+    },
+    {
+      "name": "Dessert Percheron maison (Biscuit aux amandes, pommes caramélisées au calva et au cidre, crème fouettée légèrement aromatisée à la cannelle)",
+      "price": "6.50 €",
+      "category_id": "9",
+      "category_name": "Nos desserts"
+    },
+    {
+      "name": "Suggestion du jour maison",
+      "price": "6.50 €",
+      "category_id": "9",
+      "category_name": "Nos desserts"
+    },
+    {
+      "name": "MENU (Prix net, boisson non-comprises)",
+      "price": "25.00 €",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Ravioles de foie gras maison et champignons et consommé de volaille Ou",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Pressé d’andouille de campagne à la crème de camembert Ou",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Salade de croustillants du jour, tomates confites et noix",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Médaillon de filet mignon de porc, crème de champignons Ou",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Choucroute de la mer Ou",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Magret de canard, sauce miel, thym et romarin infusés",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Garnitures: Frites maison, gratin maison, Tagliatelles, riz, légumes du jour",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Suggestions des desserts",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "MENU GOURMAND ",
+      "price": "35.00 €",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Foie gras maison, Lentilles d’Eure et Loir, son œuf poché et ses jeunes pousses Ou",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Saumon fumé maison,  ses blinis et crème fouettée au parfum de Savora",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Trou de la LOUPIOTE (mandarine impériale et sorbet mandarine)",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Pavé de filet de bœuf aux giroles, gratin de pommes de terre de Digny et ses mâches Ou",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Daurade royale rôtie et son beurre blanc",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Garnitures : Frites maison, gratin maison, Tagliatelles, riz,  légumes du jour",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Assiette de fromages affinés",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "Suggestions des desserts",
+      "price": "",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    },
+    {
+      "name": "MENU (Prix net, boissons non-comprises) (VOIR ARDOISE)",
+      "price": "20.00 €",
+      "category_id": "10",
+      "category_name": "Nos menus"
+    }
+
+
+
+
+  ]
+}

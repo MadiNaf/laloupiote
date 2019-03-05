@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url('TempusSansITC.woff2') format('woff2'),
+        url('TempusSansITC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Footlight MT';
+    src: url('FootlightMTLight.woff2') format('woff2'),
+        url('FootlightMTLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

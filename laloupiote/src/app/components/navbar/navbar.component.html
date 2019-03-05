@@ -1,0 +1,57 @@
+<!-- NAVIGATION -->
+<div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white-light">
+		<a class="navbar-brand" (click)="getLink(0)" routerLink="/accueil">
+		<img id="logo" src="./assets/img/Laloupiote-logo-transpa.png" />
+		</a>
+		<button
+		class="navbar-toggler"
+		type="button"
+		data-toggle="collapse"
+		data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+		>
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			<a class="btn-ghost nav-link text-dark" (click)="getLink(1)" routerLink="nosmenus">
+				Nos Menus <span class="sr-only">(current)</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a class="btn-ghost nav-link text-dark" (click)="getLink(0)" routerLink="/horaires"
+				>Horaire</a
+			>
+			</li>
+			<li class="nav-item">
+			<a class="btn-ghost nav-link text-dark" (click)="getLink(0)" routerLink="/localisation"
+				>Localisation</a
+			>
+			</li> 
+			<li class="nav-item">
+			<a class="btn-ghost nav-link text-dark" (click)="getLink(0)" routerLink="/contact"
+				>Contact</a
+			>
+			</li>
+		</ul>
+
+		<ul *ngIf="canTranslate" class="navbar-nav ml-auto">
+			<li class="nav-item">
+			<a class="btn-ghost nav-link translator" routerLink="/nosmenus">
+				<img src="./assets/img/fr.png" />
+			</a>
+			</li>
+			<li class="nav-item">
+			<a class="btn-ghost nav-link translator" routerLink="/menusAnglais">
+				<img src="./assets/img/en.png" />
+			</a>
+			</li>
+		</ul>
+		</div>
+	</nav>
+</div>

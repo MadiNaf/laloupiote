@@ -1,0 +1,246 @@
+<!--Affichage ordinateur-->
+<div class= "background d-none d-sm-none d-md-block d-xl-block d-lg-block">
+  <div class="container-fluid d-none d-sm-none d-md-block d-xl-block d-lg-block 
+  height margintopAffichagePC">
+    <div class="row marginleftRowNosMenus">
+      <div class="card card-block offset-lg-1 col-lg-6 col-md-8 col-xl-6 
+        widthNosMenus positionstickyMenu scrollableDiv" id="bigmama">
+        <div class="colorNosMenus positionstickyMenu marginNegativ font">
+          <div class="marginTopTitreNosmenus">
+            <h3>Carte et menus</h3>
+          </div>
+        </div>
+        <div class="font">
+          <div *ngFor="let currentTabNosmenus of nosmenusResponse | nosmenus" class="mt-5 marginTopCategoryList text-white"> 
+            
+              <div class="mb-5" [attr.id]="'frag_'+currentTabNosmenus[0].category_name">
+                  <div *ngIf="currentTabNosmenus[0].category_name == ''">
+                    <h2>*****</h2>
+                  </div>
+               
+                <h2> {{currentTabNosmenus[0].category_name}} </h2>
+                <h2 *ngIf="currentTabNosmenus[0].category_id == 10">
+                    *****************************************<br>
+                    *****************************************</h2>
+
+              </div>
+              <div *ngFor="let current of currentTabNosmenus" class="categoryName text-center mb-1" >
+                <div class="row">
+                    <div class= "col-lg-10 col-md-9 text-left mt-3">
+                        <div class="fontsizemobilenormaltext mt-1">
+                            {{ current.name }}
+                        </div>
+
+                        <div *ngIf="currentTabNosmenus[0].category_id == 10 && current.price != 'Ou' 
+                        || currentTabNosmenus[0].category_id == 11 && current.price != 'Ou'
+                        || currentTabNosmenus[0].category_id == 12 && current.price != 'Ou' 
+                        || currentTabNosmenus[0].category_id == 13 && current.price != 'Ou'
+                        || currentTabNosmenus[0].category_id == 14 && current.price != 'Ou'">
+                          <div class="mb-1 mt-4">--------------------------</div>
+                        </div>
+
+                    </div>
+                  <div class="col-lg-2 col-md-3 text-left mt-3">
+                    <div class="fontsizemobilenormaltext mt-1">
+                        {{ current.price }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="container-fluid boisson text-white ml-0 mr-0">
+
+            <h2>BOISSONS</h2> 
+
+            <div *ngFor="let currentTabBoissons of boissons | boissonscat; let i = index;"
+                [attr.id] = "'frag_boissons_'+i" class=" boisson text-white" >
+              <!-- <h3 *ngFor="let currentBoisson of currentTabBoissons" class="category text-left mb-3 mt-5">
+                {{currentBoisson.categoryName}}</h3> -->
+                <h3  *ngIf="currentTabBoissons.length > 0" 
+                      class="category text-left mb-3 mt-5"  [attr.id]="'frag_'+currentTabBoissons[0].categoryName">
+                  {{currentTabBoissons[0].categoryName}}
+                </h3>
+                <div *ngFor="let currentBoisson of currentTabBoissons">
+
+                    <div class="row text-white text-left table">
+                        <div class="col-md-5 pl-0 pr-0">{{currentBoisson.name}}</div>
+                        <div class="col-md-1 text-left pl-0 pr-0">{{currentBoisson.quantities_1}}</div>
+                        <div class="col-md-1 text-left pl-0 pr-0">{{currentBoisson.price_1}}</div>
+                        <div class="col-md-1 text-right pl-0 pr-0">{{currentBoisson.quantities_2}}</div>
+                        <div class="col-md-1 text-right pl-0 pr-0">{{currentBoisson.price_2}}</div>
+                        <div class="col-md-1 text-right pl-0 pr-0">{{currentBoisson.quantities_3}}</div>
+                        <div class="col-md-1 text-right pl-0 pr-0">{{currentBoisson.price_3}}</div>
+                    </div>
+
+              </div>
+            </div>  
+          </div>
+         
+        </div>
+      </div>
+      <!-- SOMMAIRE PC-->
+      <div class="offset-lg-1 col-md-4 col-lg-3 col-xl-3 font bandeau_sommaire">
+        <div class="card card-block widthNosMenusFormules scrollableDiv">
+          <div class="colorNosMenus positionstickyMenu font">
+            <div class="marginTopTitreNosmenus">
+              <h3>Sommaire</h3>
+            </div>
+          </div>
+          <div *ngFor="let currentTabNosmenus of nosmenusResponse | nosmenus">
+            <a routerLink="/nosmenus" 
+              (click)="ancreClickee('frag_'+currentTabNosmenus[0].category_name)" >
+              <div *ngIf=" currentTabNosmenus[0].category_name != '' ">
+                <div class="mt-3 margintopSommaire">
+                  <h4>{{currentTabNosmenus[0].category_name.toUpperCase()}}</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mt-3 margintopSommaire">
+            <a  routerLink="/nosmenus" (click)="ancreClickee('frag_boissons_0')" >
+              <h4>BOISSONS</h4>
+            </a>
+          </div>
+         
+        </div>
+      </div>    
+    </div>
+  </div>
+  <div class="col-lg-1 col-xl-1">
+  </div>
+</div>
+<!--Affichage mobile-->
+<div class="background d-lg-none d-xl-none d-md-none d-sm-block d-block">
+  <div class="container bg-loupiote d-flex justify-content-center d-lg-none 
+      d-xl-none d-md-block d-sm-block d-block height">
+    <div class="row">
+      <div class="col-5 col-sm-5 col-md-5  d-flex justify-content-center mt-5">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle
+              buttonweight margintopbutton dropdownindexbutton fontsizebuttonmobile ml-4"
+            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carte
+          </button>
+          <div class="dropdown-menu hideunwantedbar" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item underbuttonweight" href="#"></a>
+            <div class="dropdownindextext widthNosMenusMobile scrollableDivMobile pl-2 pr-5 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <table class="text-white widthNosMenusMobile fontmobile">
+                <div *ngFor="let currentTabNosmenus of nosmenusResponse | nosmenus" class="mt-5 marginTopCategoryList"> 
+                    <div *ngIf="currentTabNosmenus[0].category_id != 10 && currentTabNosmenus[0].category_id != 11 &&
+                    currentTabNosmenus[0].category_id != 12 && currentTabNosmenus[0].category_id != 13 &&
+                    currentTabNosmenus[0].category_id != 14">
+                        <div class="mb-5 d-flex justify-content-center">
+                          <h2> {{currentTabNosmenus[0].category_name}} </h2>
+                        </div>
+                        <div *ngFor="let current of currentTabNosmenus" class="categoryName text-center" >
+                          <div class="row">
+                              <div class= "col-8 text-left mt-1">
+                                  <div class="fontsizemobilenormaltext mt-1">
+                                      {{ current.name }}
+                                  </div>
+                              </div>
+                              <div class="col-4 text-right mt-3">
+                                <div class="fontsizemobilenormaltext mt-1">
+                                    {{ current.price }}
+                                </div>
+                              </div>
+                          </div>
+                        </div>    
+                    </div>
+                </div>
+            </table>
+            <!-- BOISSONS MOBILES-->
+       
+            <table class="boisson text-white fontmobile widthNosMenusMobile">
+               <div *ngFor="let currentTabBoissons of boissons | boissonscat">
+                  <h3 *ngIf="currentTabBoissons.length > 0" 
+                  class="category text-left mb-3 mt-5" [attr.id]="'frag_'+currentTabBoissons[0].categoryName">
+                  {{currentTabBoissons[0].categoryName}}
+                  </h3>
+                  <div *ngFor="let currentBoisson of currentTabBoissons">
+
+                    <div class="row text-white text-left table">
+                    <div class="col-12 pl- pr-0 ml-0">{{currentBoisson.name}}</div>
+                    <div class="col-2 text-center pl-1 pr-0">{{currentBoisson.quantities_1}}</div>
+                    <div class="col-2 text-center pl-0 pr-0">{{currentBoisson.price_1}}</div>
+                    <div class="col-2 text-center pl-0 pr-0">{{currentBoisson.quantities_2}}</div>
+                    <div class="col-2 text-center pl-0 pr-0">{{currentBoisson.price_2}}</div>
+                    <div class="col-2 text-center pl-0 pr-0">{{currentBoisson.quantities_3}}</div>
+                    <div class="col-2 text-center pl-0 pr-0">{{currentBoisson.price_3}}</div>
+                    </div>
+
+                  </div>
+                </div> 
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offset-2 col-5 col-sm-5 col-md-5  d-flex justify-content-center mt-5">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle
+                  buttonweight margintopbutton dropdownindexbutton fontsizebuttonmobile mr-3"
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menus
+              </button>
+              <div class="dropdown-menu hideunwantedbarMenus" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item underbuttonweightMenus" href="#"></a>
+                <div class="dropdownindextext scrollableDivMobile col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <table class="text-white widthNosMenusMobileMenus fontmobile">
+                    <div *ngFor="let currentTabNosmenus of nosmenusResponse | nosmenus" class="mt-5 marginTopCategoryList"> 
+                        <div *ngIf="currentTabNosmenus[0].category_id == 10 || currentTabNosmenus[0].category_id == 11 ||
+                        currentTabNosmenus[0].category_id == 12 || currentTabNosmenus[0].category_id == 13
+                        || currentTabNosmenus[0].category_id == 14">
+                          <div class="mb-5 d-flex justify-content-center">
+
+                              <div *ngIf="currentTabNosmenus[0].category_name == ''">
+                                  <h2>*****</h2>
+                              </div>
+
+                              <!-- <h2> {{currentTabNosmenus[0].category_name}} </h2> -->
+                              <!-- <h2 *ngIf="currentTabNosmenus[0].category_id == 10">
+                                  *****************************************<br>
+                                  *****************************************</h2> -->
+                          </div>         
+                          <div *ngFor="let current of currentTabNosmenus" class="categoryName text-center" >
+                            <div class="row">
+                                <div class= "col-8 text-left mt-3">
+                                    <div class="fontsizemobilenormaltext mt-1">
+                                        {{ current.name }}
+                                    </div>
+                                </div>
+                                <div class="col-4 text-right mt-3">
+                                    <div class="fontsizemobilenormaltext mt-1">
+                                        {{ current.price }}
+                                    </div>
+                                  </div>
+
+                                <div *ngIf="currentTabNosmenus[0].category_id == 10 && current.price != 'Ou' 
+                              || currentTabNosmenus[0].category_id == 11 && current.price != 'Ou'
+                              || currentTabNosmenus[0].category_id == 12 && current.price != 'Ou' 
+                              || currentTabNosmenus[0].category_id == 13 && current.price != 'Ou'
+                              || currentTabNosmenus[0].category_id == 14 && current.price != 'Ou'">
+                                <div class="mb-1 mt-4">--------------------------</div>
+                              </div>
+
+
+                                
+                            </div>
+                          </div>    
+                      </div>
+                    </div>
+                </table>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-4 margintoplogomobile">
+        <img src="../../../assets/img/Laloupiote-logo-transpa.png" alt="Smiley face" height="200" width="300"> 
+      </div>
+      <div class="col-4"></div>  
+    </div>
+  </div>
+</div>

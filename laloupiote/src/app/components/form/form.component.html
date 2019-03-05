@@ -1,0 +1,71 @@
+
+<div class="container-fluid bg-texture-bois1">
+    <div class="row d-flex justify-content-center ">
+        <!-- <img class="background_contact" src="/../../assets/img/foggy-345719_1920.jpg" alt="background_contact"> -->
+
+        <form #contactForm = "ngForm" class="form-container col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
+
+           
+                <h3 class="col-12 text-center title">Contactez nous pour plus d'information</h3>
+           
+
+            <div class="form-group row">
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label for="inputNom" class="label text-center" >Nom</label>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <input [(ngModel)] ="form.firstName" [ngModelOptions]="{standalone: true}" name="nom" type="text" class="form-control" id="inputNom" aria-label="nom" placeholder=" " required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label for="inputPrenom" class="label">Prénom</label>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <input [(ngModel)]="form.lastName" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="inputPrenom" aria-label="Prénom" placeholder=" " required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label for="inputEmail" class="label">Email</label>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <input type="email" [(ngModel)]="form.emailAddress" [ngModelOptions]="{standalone: true}" class="form-control" id="inputEmail" aria-label="Email" placeholder=" " required>
+                </div>
+            </div>  
+
+            <div class="form-group row">
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label for="inputTelephone" class="label">Téléphone</label>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <input type="number" [(ngModel)]="form.phone" [ngModelOptions]="{standalone: true}" class="form-control" id="inputTelephone" aria-label="Téléphone" placeholder=" ">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-12 col-lg-3 col-xl-3">
+                    <label for="inputQuestion" class="label">Question</label>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <textarea [(ngModel)]="form.message" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="inputQuestion" aria-label="Question" placeholder=" " required></textarea>
+                </div>
+            </div>
+
+            <div class="row m-2">
+                <div class="col-12 text-center ">
+                   <button type="submit" (click)="sendMail(form)" class="btn-ghost"> Envoyer</button>
+                </div>
+                
+            </div>    
+           
+
+        </form>   
+        
+        
+    </div>
+
+</div> 
+

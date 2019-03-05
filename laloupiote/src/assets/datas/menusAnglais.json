@@ -1,0 +1,440 @@
+{
+    "plates": [{
+        "name": "Home-made foie gras with gingerbread and seasonal chutney",
+        "price": "15.50 €",
+        "category_id": "1",
+        "category_name": "Entrées"
+      },
+      {
+        "name": "Home-smoked salmon with blinis",
+        "price": "13.50 €",
+        "category_id": "1",
+        "category_name": "Entrées"
+      },
+      {
+        "name": "Ravioli – home-made from the pick of the market",
+        "price": "13.00 €",
+        "category_id": "1",
+        "category_name": "Entrées"
+      },
+      {
+        "name": "House terrine",
+        "price": "7.50 €",
+        "category_id": "1",
+        "category_name": "Entrées"
+      },
+      {
+        "name": "Pork andouille sausage with crushed potatoes and a camembert cream",
+        "price": "11.00 €",
+        "category_id": "1",
+        "category_name": "Entrées"
+      },
+      {
+        "name": "Home-smoked salmon with a cream dressing",
+        "price": "15.00€",
+        "category_id": "2",
+        "category_name": "Salads"
+      },
+      {
+        "name": "Landaise Salad – gesiers, duck breast, confit of duck, walnuts and sun-dried tomatoes",
+        "price": "17.00 €",
+        "category_id": "2",
+        "category_name": "Salads"
+      },
+      {
+        "name": "Périgourdine Salad – home-made foie gras, gesiers, duck breast, confit of duck, walnuts and sun-dries tomatoes",
+        "price": "19.90 €",
+        "category_id": "2",
+        "category_name": "Salads"
+      },
+      {
+        "name": "Croustillant Salad – the best of the market in filo pastry",
+        "price": "12.00 €",
+        "category_id": "2",
+        "category_name": "Salads"
+      },
+      {
+        "name": "Vegetarian Salad – with seasonal vegetables",
+        "price": "12.50 €",
+        "category_id": "2",
+        "category_name": "Salads"
+      },
+      {
+        "name": "Duck Breast with a honey sauce infused with thyme and rosemary",
+        "price": "15.50 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "The Butcher’s choice – steak",
+        "price": "16.50 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "Fillet of Beef - classical beef steak with  a pepper or Roquefort or camembert sauce",
+        "price": "19.50 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "Andouillette- Classic pork sausage made from chitterlings and served with a mustard sauce",
+        "price": "12.50 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "Seafood choucroute",
+        "price": "19.90 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "Fish of the day",
+        "price": "18.50 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "House hamburger with a cheddar sauce and French fries and salad",
+        "price": "13.50 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "Royal hamburger – topped with foie gras and served with a morel sauce and accompanied with French fries and salad",
+        "price": "19.90 €",
+        "category_id": "3",
+        "category_name": "Plats"
+      },
+      {
+        "name": "Sides : All our main courses are accompanied by home-made French Fries or home-made gratin or vegetables of the day or rice or tagliatelle, (For a supplement of €3.00 one can add a sauce morel)",
+        "price": "3.00 €",
+        "category_id": "4",
+        "category_name": "Our sides"
+      },
+      {
+        "name": "Daily Menu (lunchtime only – Tuesday to Friday), drinks not included",
+        "price": "14.00€ See blackboard ",
+        "category_id": "5",
+        "category_name": "Menu of the day"
+      },
+      {
+        "name": "Children’s Menu (Drinks not included)",
+        "price": "10.00 €",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Omelette or",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Hamburger or",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Ham or",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Fish of the day Followed by",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Chocolate fondant with custard or",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Two scoops of ice cream/sorbet or",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "‘Smarties’ ice cream",
+        "price": "",
+        "category_id": "6",
+        "category_name": "Children menu"
+      },
+      {
+        "name": "Intense vanilla",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Salted butter caramel",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Chocolate mint",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Coffee",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Chocolate",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Strawberry",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Blackcurrant",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Rum and raisin",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Cherries from the Orchard",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Green apple",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Line",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Pineapple",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Coconut",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Exotic Mango",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Passion fruit",
+        "price": "",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "2 scoops of ice cream",
+        "price": "3.50 €",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "2 scoops of ice cream",
+        "price": "4.50 €",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "4 scoops of ice cream",
+        "price": "5.50 €",
+        "category_id": "7",
+        "category_name": "Our frozen desserts"
+      },
+      {
+        "name": "Assortment of three cheeses",
+        "price": "6.00 €",
+        "category_id": "8",
+        "category_name": "Cheese"
+      },
+      {
+        "name": "Home-made Nougat ice cream",
+        "price": "6.50 €",
+        "category_id": "9",
+        "category_name": "Our desserts"
+      },
+      {
+        "name": "Coffee gourmand",
+        "price": "6.80 €",
+        "category_id": "9",
+        "category_name": "Our desserts"
+      },
+      {
+        "name": "Home-made profiteroles",
+        "price": "6.50 €",
+        "category_id": "9",
+        "category_name": "Our desserts"
+      },
+      {
+        "name": "Home-made Chocolate mirror – almond Genoese sponge topped with a seasonal fruit mousse and a dark chocolate mousse all covered in dark chocolate",
+        "price": "6.50 €",
+        "category_id": "9",
+        "category_name": "Our desserts"
+      },
+      {
+        "name": "The Perche (our region) – caramelised apples in calvados and cider with a light cream delicately flavoured with cinnamon",
+        "price": "6.50 €",
+        "category_id": "9",
+        "category_name": "Our desserts"
+      },
+      {
+        "name": "Daily special",
+        "price": "6.50 €",
+        "category_id": "9",
+        "category_name": "Our desserts"
+      },
+      {
+        "name": "MENU (Drinks not included)",
+        "price": "25.00 €",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Raviolis of foie gras and mushroom and a chicken consommé Or",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Pork andouille sausage with crushed potatoes and a camembert cream Or",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Croustillant Salad – the best of the market in filo pastry",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Pork fillet with a mushroom cream sauce Or",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Seafood choucroute Or",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Duck Breast with a honey sauce infused with thyme and rosemary",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Sides All our main courses are accompanied by home-made French Fries or home-made gratin or vegetables of the day or rice or tagliatelle",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name":"Suggestion of desserts",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "MENU GOURMAND ",
+        "price": "35.00 €",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Home-made foie gras with local lentils, poached egg and young green leaves Or",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Home-smoked salmon, blinis and a light cream flavoured with Savora",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Trou de la LOUPIOTE (Mandarin sorbet soused with imperial mandarin liqueur)",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Fillet of beef with a chanterelle mushroom sauce and gratin potatoes and lamb’s tongue salad Or",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Roasted seabream with a butter sauce",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Sides : All our main courses are accompanied by home-made French Fries or home-made gratin or vegetables of the day or rice or tagliatelle",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Platter of mature cheeses",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "Suggestion of desserts",
+        "price": "",
+        "category_id": "10",
+        "category_name": "Our menus"
+      },
+      {
+        "name": "MENU (Prix net, boissons non-comprises) (See blackboard)",
+        "price": "20.00 €",
+        "category_id": "10",
+        "category_name": "Our menus"
+      }
+  
+  
+  
+  
+    ]
+  }
+  

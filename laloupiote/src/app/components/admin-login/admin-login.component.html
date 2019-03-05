@@ -1,0 +1,44 @@
+<div id="admin-login-container" class="container-fluide form-login bg-texture-bois1">
+	<div class="row">
+ 
+		<div id="admin-login" class="container bg-black-dark">
+			<div class="row">
+				<div  *ngIf="!courrentUser.connected"  class="col-12 d-flex justify-content-center container light-text py-3">
+					<form >
+						<div class="col-12 form-group">
+							<label for="email-admin">Entrez votre email</label>
+							<input [(ngModel)]="courrentUser.email" type="email" 
+								id="email-admin" name="email"
+								(keyup)="getEmailValidation(courrentUser.email)"
+								[className]="emailValide ? emailClass : emailClass">
+
+								<small *ngIf="!emailValide" [class]="inputHelperClass">email invalide</small>
+						</div>
+						
+						<div class="col-12 form-group ">
+							<label for="Password">Entrez votre mot de passe</label>
+							<input [(ngModel)]="courrentUser.password" type="password" 
+								id="Password1" name="password"
+								(keyup)="getPwlValidation(courrentUser.password)"
+								[className]="pwValide ? pwClass : pwClass">
+
+								<small *ngIf="!pwValide" [class]="inputHelperClass">mot de passe invalide</small>
+						</div>
+					</form>
+				</div>
+
+				<div  *ngIf="courrentUser.connected"  class="col-12 d-flex justify-content-center container light-text py-3">
+					<h5>
+							Bienvenue dans la section d'administration
+					</h5>
+				</div>
+
+				<div class="col-12 d-flex justify-content-center">
+					<a [routerLink]="link">
+						<button class="btn btn-ghost" (click)="userAuth(courrentUser.email, courrentUser.password)"> {{ authStat }}</button>
+					</a>
+				</div>
+			</div> 
+		</div>
+	</div> 
+</div>

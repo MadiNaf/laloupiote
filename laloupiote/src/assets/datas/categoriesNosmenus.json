@@ -1,0 +1,28 @@
+{
+    "categoryNosmenus":[
+        {
+            "id": 1,
+            "name": "Entrees"
+        },
+        {
+            "id": 2,
+            "name": "Salades"
+        },
+        {
+            "id": 3,
+            "name": "Plats"
+        },
+        {
+            "id": 4,
+            "name": "Menus"
+        },
+        {
+            "id": 5,
+            "name": "Nos Garnitures"
+        },
+        {
+            "id": 6,
+            "name": "Menus du jour"
+        }
+    ]
+}

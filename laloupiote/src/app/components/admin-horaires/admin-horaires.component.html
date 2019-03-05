@@ -1,0 +1,489 @@
+<div class="container bg-dark form-horaires paraph-text mt-lg-5 mt-xl-5 mb-lg-5 mb-xl-5">
+	<div class="row">
+		<div class="col-12 d-flex justify-content-center container light-text">
+			<form class="row">
+		<!-- SECTION Lundi ############################################################ -->
+				<div class="col-12 form-group">
+			    	<label for="monday" class="d-flex justify-content-center container">Lundi</label>
+<!-- NOTE les select de choir l'état d'ou -->
+					<select id="monday-open-close" class="form-control d-flex justify-content-center" 
+					(change)="mondayOpeningMorning($event)">
+						<option class="optn"  value="close">Fermé le midi</option>
+						<option class="optn"  value="open">ouvert le midi</option>
+					</select>
+		<!-- ANCHOR Lundi midi -->
+		<!-- NOTE si t'as regarder le fichier TS en premier 
+			T'as du remarquer qu'il y'avait une variable pour les heures et une autres minutes
+			c'est tout simplement parceque je les récupère séparement
+	  -->
+					<div *ngIf="mondayIsOpenMorning" id="monday-open" class="form-row">
+						<div class="col-12 container">
+							<div class="row">
+								<div class="col-6 form-group ">
+									<label  class="d-flex justify-content-center light-text">Ouverture lundi midi</label>
+									<div class="col-4 d-flex justify-content-center container">
+										<input [(ngModel)]="monday.hm_opening" name="monday.hm_opening" type="number" class="form-control">
+										<span class="serparate-point"> : </span>
+										<input [(ngModel)]="monday.mm_opening" name="monday.mm_opening" type="number" class="form-control">
+									</div> 
+								</div>
+								<div class="col-6 form-group ">
+									<label  class="d-flex justify-content-center light-text">Fermeture lundi midi</label>
+									<div class="col-4 d-flex justify-content-cente container">
+										<input [(ngModel)]="monday.hm_closing" name="monday.hm_closing" type="number" class="form-control">
+										<span class="serparate-point"> : </span>
+										<input [(ngModel)]="monday.mm_closing" name="monday.mm_closing" type="number" class="form-control">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<select id="monday-open-close" class="form-control d-flex justify-content-center mt-2" 
+					(change)="mondayOpeningAfternoon($event)">
+						<option class="optn"  value="close">Fermé soir</option>
+						<option class="optn"  value="open">ouvert l'apreès-midi</option>
+					</select>
+			<!--ANCHOR Lundi APRES MIDI -->
+					<div *ngIf="mondayIsOpenAfternoon" class="form-row">
+						<div class="col-12 container">
+							<div class="row">
+								<div class="col-6 form-group">
+										<label  class="d-flex justify-content-center light-text">Ouverture lundi après midi</label>
+									<div class="col-4 d-flex justify-content-center container">
+										<input [(ngModel)]="monday.ha_opening" name="monday.ha_opening" type="number" class="form-control" id="">
+										<span class="serparate-point"> : </span>
+										<input [(ngModel)]="monday.ma_opening" name="monday.ma_opening" type="number" class="form-control" id="">
+									</div>
+								</div>
+								<div class="col-6 form-group">
+										<label  class="d-flex justify-content-center light-text">Fermeture lundi après midi</label>
+									<div class="col-4 d-flex justify-content-center container">
+										<input [(ngModel)]="monday.ha_closing" name="monday.ha_closing" type="number" class="form-control" id="">
+										<span class="serparate-point"> : </span>
+										<input [(ngModel)]="monday.ma_closing" name="monday.ma_closing" type="number" class="form-control" id="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="separator"></div> 
+				</div>
+		<!-- !SECTION  -->
+		<!-- SECTION MArdi ############################################################ -->
+					<div class="col-12 form-group">
+			    		<label for="monday" class="d-flex justify-content-center container">Mardi</label>
+
+						<select class="form-control" (change)="tuesdayOpeningMorning($event)">
+							<option class="optn"  value="close">Fermé le midi</option>
+							<option class="optn"  value="open">Ouvert le midi</option>
+						</select>
+			<!-- ANCHOR  MARDI midi -->
+						<div *ngIf="tuesdayIsOpenMorning" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group ">
+										<label  class="d-flex justify-content-center light-text">Ouverture mardi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="tuesday.hm_opening" name="tuesday.hm_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="tuesday.mm_opening" name="tuesday.mm_opening" type="number" class="form-control" id="">
+										</div> 
+									</div>
+									<div class="col-6 form-group ">
+										<label  class="d-flex justify-content-center light-text">Fermeture mardi midi</label>
+										<div class="col-4 d-flex justify-content-cente container">
+											<input [(ngModel)]="tuesday.hm_closing" name="tuesday.hm_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="tuesday.mm_closing" name="tuesday.mm_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<select class="form-control mt-2" (change)="tuesdayOpeningAfternoon($event)">
+							<option class="optn"  value="close">Fermé soir</option>
+							<option class="optn"  value="open">Ouvert soir</option>
+						</select>
+			<!--ANCHOR MARDI APRES MIDI -->
+						<div *ngIf="tuesdayIsOpenAfternoon" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture mardi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="tuesday.ha_opening" name="tuesday.ha_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="tuesday.ma_opening" name="tuesday.ma_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture mardi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="tuesday.ha_closing" name="tuesday.ha_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="tuesday.ma_closing" name="tuesday.ma_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="separator"></div>
+						</div>
+		<!-- !SECTION -->
+		<!-- SECTION Mercredi ############################################################ -->
+			  		<div class="col-12 form-group ">
+					    <label for="wednesday" class="d-flex justify-content-center light-text">Mercredi</label>
+
+					    <select class="form-control" (change)="wednesdayOpeningMorning($event)">
+							<option class="optn"  value="close">Fermé le midi</option>
+							<option class="optn"  value="open">Ouvert le midi</option>
+						</select>
+			<!--ANCHOR MERCREDI midi -->					
+						<div *ngIf="wednesdayIsOpenMorning" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture mercredi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input  [(ngModel)]="wednesday.hm_opening" name="wednesday.hm_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="wednesday.mm_opening" name="wednesday.mm_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture mercredi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="wednesday.hm_closing" name="wednesday.hm_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="wednesday.mm_closing" name="wednesday.mm_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<select class="form-control mt-2" (change)="wednesdayOpeningAfternoon($event)">
+							<option class="optn"  value="close">Fermé soir</option>
+							<option class="optn"  value="open">Ouvert soir</option>
+						</select>
+			<!--ANCHOR MERCREDI APRES MIDI -->
+						<div *ngIf="wednesdayIsOpenAfternoon" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture mercredi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="wednesday.ha_opening" name="wednesday.ha_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="wednesday.ma_opening" name="wednesday.ma_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture mercredi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="wednesday.ha_closing" name="wednesday.ha_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="wednesday.ma_closing" name="wednesday.ma_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="separator"></div>
+						</div>
+		<!-- !SECTION  -->
+		<!-- SECTION Jeudi ############################################################ -->
+			  		<div class="col-12 form-group ">
+					    <label for="Thursday " class="d-flex justify-content-center container light-text">Jeudi</label>
+					    
+					    <select class="form-control" (change)="thursdayOpeningMorning($event)">
+							<option class="optn"  value="close">Fermé le midi</option>
+							<option class="optn"  value="open">Ouvert le midi</option>
+						</select>
+			<!-- ANCHOR JEUDI midi -->
+						<div *ngIf="thursdayIsOpenMorning" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture jeudi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="thursday.hm_opening" name="thursday.hm_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="thursday.mm_opening" name="thursday.mm_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture jeudi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="thursday.hm_closing" name="thursday.hm_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="thursday.mm_closing" name="thursday.mm_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<select class="form-control mt-2" (change)="thursdayOpeningAfternoon($event)">
+							<option class="optn"  value="close">Fermé soir</option>
+							<option class="optn"  value="open">Ouvert soir</option>
+						</select>
+			<!-- ANCHOR JEUDI APRES MIDI -->
+						<div *ngIf="thursdayIsOpenAfternoon" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture jeudi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="thursday.ha_opening" name="thursday.ha_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="thursday.ma_opening" name="thursday.ma_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture jeudi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="thursday.ha_closing" name="thursday.ha_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="thursday.ma_closing" name="thursday.ma_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="separator"></div>
+						</div>
+		<!-- !SECTION  -->
+		<!-- SECTION Vendredi ############################################################ -->
+			  		<div class="col-12 form-group ">
+					    <label for="Friday" class="d-flex justify-content-center container light-text">Vendredi</label>
+					    
+					    <select class="form-control" (change)="fridayOpeningMorning($event)">
+							<option class="optn"  value="close">Fermé le midi</option>
+							<option class="optn"  value="open">Ouvert le midi</option>
+						</select>
+			<!--ANCHOR VENDREDI midi -->
+						<div *ngIf="fridayIsOpenMorning" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture vendredi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="friday.hm_opening" name="friday.hm_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="friday.mm_opening" name="friday.mm_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture vendredi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="friday.hm_closing" name="friday.hm_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="friday.mm_closing" name="friday.mm_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<select class="form-control mt-2" (change)="fridayOpeningAfternoon($event)">
+							<option class="optn"  value="close">Fermé soir</option>
+							<option class="optn"  value="open">Ouvert soir</option>
+						</select>
+			<!--ANCHOR VENDREDI APRES MIDI -->
+						<div *ngIf="fridayIsOpenAfternoon" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture vendredi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="friday.ha_opening" name="friday.ha_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="friday.ma_opening" name="friday.ma_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture vendredi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="friday.ha_closing" name="friday.ha_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="friday.ma_closing" name="friday.ma_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="separator"></div>
+						</div>
+		<!-- !SECTION  -->
+		<!-- SECTION Samedi ############################################################ -->
+			  		<div class="col-12 form-group ">
+					    <label for="Saturday" class="d-flex justify-content-center container light-text">Samedi</label>
+					    
+					    <select class="form-control" (change)="saturdayOpeningMorning($event)">
+							<option class="optn"  value="close">Fermé le midi</option>
+							<option class="optn"  value="open">Ouvert le midi</option>
+						</select>
+			<!--ANCHOR SAMEDI midi -->
+						<div *ngIf="saturdayIsOpenMorning" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture samedi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="saturday.hm_opening" name="saturday.hm_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="saturday.mm_opening" name="saturday.mm_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture samedi midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="saturday.hm_closing" name="saturday.hm_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="saturday.mm_closing" name="saturday.mm_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<select class="form-control mt-2" (change)="saturdayOpeningAfternoon($event)">
+							<option class="optn"  value="close">Fermé soir</option>
+							<option class="optn"  value="open">Ouvert soir</option>
+						</select>
+			<!--ANCHOR SAMEDI APRES MIDI -->
+						<div *ngIf="saturdayIsOpenAfternoon"class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture samedi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="saturday.ha_opening" name="saturday.ha_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="saturday.ma_opening" name="saturday.ma_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture samedi après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="saturday.ha_closing" name="saturday.ha_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="saturday.ma_closing" name="saturday.ma_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="separator"></div>
+						</div>
+		<!-- !SECTION   -->
+		<!-- SECTION Diamanche ############################################################ -->
+			  		<div class="col-12 form-group ">
+					    <label for="Sunday" class="d-flex justify-content-center container light-text">Dimanche</label>
+					    
+					    <select class="form-control" (change)="sundayOpeningMorning($event)">
+							<option class="optn"  value="close">Fermé le midi</option>
+							<option class="optn"  value="open">Ouvert le midi</option>
+						</select>
+			<!--ANCHOR DIMANCHE midi -->
+						<div *ngIf="sundayIsOpenMorning" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Ouverture dimanche midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="sunday.hm_opening" name="sunday.hm_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="sunday.mm_opening" name="sunday.mm_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture dimanche midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="sunday.hm_closing" name="sunday.hm_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="sunday.mm_closing" name="sunday.mm_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<select class="form-control  mt-2" (change)="sundayOpeningAfternoon($event)">
+							<option class="optn"  value="close">Fermé soir</option>
+							<option class="optn"  value="open">Ouvert soir</option>
+						</select>
+			<!--ANCHOR DIMANCHE APRES MIDI -->
+						<div *ngIf="sundayIsOpenAfternoon" class="form-row">
+							<div class="col-12 container">
+								<div class="row">
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">ouvert le mididimanche après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="sunday.ha_opening" name="sunday.ha_opening" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="sunday.ma_opening" name="sunday.ma_opening" type="number" class="form-control" id="">
+										</div>
+									</div>
+									<div class="col-6 form-group">
+											<label  class="d-flex justify-content-center light-text">Fermeture dimanche après midi</label>
+										<div class="col-4 d-flex justify-content-center container">
+											<input [(ngModel)]="sunday.ha_closing" name="sunday.ha_closing" type="number" class="form-control" id="">
+											<span class="serparate-point"> : </span>
+											<input [(ngModel)]="sunday.ma_closing" name="sunday.ma_closing" type="number" class="form-control" id="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			<!-- !SECTION  -->
+						<div class="separator"></div>
+							  
+			  		</div>
+				
+				</form> 
+			</div>
+
+<!-- NOTE Modal de confirmation -->
+			<div class="col-12 d-flex justify-content-center">
+				<button class="btn btn-ghost" (click)="updateHoraire(monday, tuesday, wednesday,thursday,  friday, saturday, sunday)"
+						data-toggle="modal" data-target="#updateSuccessful">
+					Submit
+				</button>
+		<!-- Modal -->
+		<div class="modal fade" id="updateSuccessful" tabindex="-1" role="dialog" 
+			aria-labelledby="updateSuccessfuly" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-modal">
+						<h5 class="modal-title dark-text" id="updateSuccessfuly">Les nouvelles horaires sont disponibles</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body bg-modal">
+						<h5 class="text-success d-flex justify-content-center container ">Les horaires ont bien été mis à jour</h5>
+						<div class="circle-loader load-complete d-flex justify-content-center container ">
+							<div class="checkmark draw "></div>
+						</div>
+					</div>
+					<div class="modal-footer bg-black-dark d-flex justify-content-center container">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+			</div>
+		</div>
+	</div>

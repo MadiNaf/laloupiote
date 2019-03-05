@@ -1,0 +1,121 @@
+<div class="container-fluid bg-texture-bois1">
+    <div class="row d-flex justify-content-center"> 
+		<div class="form-container col-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
+			
+			<h3 class="col-12 text-center title">Administrateur : Actualité</h3>
+
+
+			<div class="form-group row">
+				<div class="form-group col-sm-12 col-md-12 col-lg-12 col-xl-12 mr-2">
+					<textarea #actualite [(ngModel)]="articleToUpdate.content" type="text" class="form-control" id="text-actualite"></textarea>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 col-lg-4 col-xl-4">
+					<label for="" class="text-white">Date de début evènement</label>
+					<input type="date" class="form-control" id="startDate" 
+						[(ngModel)]="startDate" value="2018-12-24" #startD>
+				</div>
+				<div class="col-12 col-lg-4 col-xl-4">
+					<label for="" class="text-white">Date de fin evènements</label>
+					<input type="date" class="form-control" id="endDate" 
+						[(ngModel)]="endDate" value="2018-12-26" #endD>
+				</div>
+				<div class="col-12 col-lg-3 col-xl-3 text-white">
+					<label><input type="checkbox" value="" [(ngModel)]="attachment" 
+						(change)="onChecked($event)">avec piece jointe</label>
+
+					<input *ngIf="attachment" id="doc-file"  type="file" name="articleFile" class="input-file" 
+					(change)="onFileChange($event)" multiple>
+				</div>
+			</div>
+
+			<div class="row m-2">
+<!-- ############################## BUTTON SUPPRIMER & MODAAL DE SUPPRESSION ############################## -->
+					<div class="col-12 text-center ">
+						<button class="btn-ghost btn text-white" 
+						data-toggle="modal" data-target="#deleteSuccessful">	
+								Supprimer
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="deleteSuccessful" tabindex="-1" role="dialog" 
+							aria-labelledby="deleteSuccessfuly" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header bg-modal">
+								<h5 class="modal-title " id="creatSuccessfuly"> Voulez vous vraiment supprimer cette actualité ?</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true" (click)="deleteReset()">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body bg-modal">
+								<div *ngIf="!deleted"><i class="fas fa-exclamation-triangle"></i></div>
+
+								<div *ngIf="deleted">
+									<h5 class="text-success">Actualité supprimée avec succes</h5>
+									<div class="circle-loader load-complete">
+										<div class="checkmark draw"></div>
+									</div>
+								</div>
+							</div>
+							<div *ngIf="!deleted" class="modal-footer bg-black-dark">
+								<button  type="button" class="btn btn-secondary" data-dismiss="modal">NON</button>
+								<button  type="button" class="btn btn-success"
+									(click)="deleteArticle(articleToUpdate.id)">OUI</button>
+							</div>
+						</div>
+						</div>
+					</div>
+<!-- ############################## BUTTON D'AJOUT & MODAAL DE CREATION ############################## -->
+					<button class="btn-ghost btn text-white" data-toggle="modal" data-target="#creatSuccessful"
+						(click)="getUserDate(startD.value, endD.value, articleToUpdate.content)">
+						Ajouter
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="creatSuccessful" tabindex="-1" role="dialog" 
+							aria-labelledby="creatSuccessfuly" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header bg-modal">
+								<h5 class="modal-title" id="creatSuccessfuly">Nouvelle Actualité disponible</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body bg-modal">
+								<h5 class="text-success">Actualité crée avec succes</h5>
+								<div class="circle-loader load-complete">
+									<div class="checkmark draw"></div>
+								</div>
+							</div>
+							<div class="modal-footer bg-black-dark">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12">
+			<h5 class="d-flex justify-content-center text-white">Visualisation</h5>
+			<p class="d-flex justify-content-center">contenu : {{ contentUpdate }}</p>
+			<p class="d-flex justify-content-center">
+				de	{{ startDate }} / {{ endDate }}
+			</p>
+		</div>
+		<div *ngIf="articleToUpdate.content != null" class="col-12">
+			<h5 class=" d-flex justify-content-center text-white ">Actualité</h5>
+			<p class="d-flex justify-content-center">
+				Contenue : {{ articleToUpdate.content }}
+			</p>
+			<p class="d-flex justify-content-center">
+				de {{ articleToUpdate.startDate }} / {{ articleToUpdate.endDate }}
+			</p>
+		</div>
+ 	</div>  
+</div> 

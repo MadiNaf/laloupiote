@@ -1,0 +1,12 @@
+.section-content{
+	padding-top: 8em;
+	padding-bottom: 8Em;
+}
+
+.tab-content{
+	background-color: #666666;
+}
+
+thead, th, td{
+	border: none;
+}

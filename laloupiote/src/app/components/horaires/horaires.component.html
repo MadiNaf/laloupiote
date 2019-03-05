@@ -1,0 +1,180 @@
+<!-- HORAIRE -->
+<section class="bg-black-dark section-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class=" d-flex justify-content-center">
+					<div class="card">
+						<div class="card-header d-flex justify-content-center">
+							<h4 id="horaires">Horaires</h4>
+						</div>
+						<div class="card-body">
+							<table class="table table-bordered text-white">
+								<thead>
+								<tr>
+									<th scope="col" class="bg-black-dark"></th>
+									<th scope="col" class="bg-black-dark">midi</th>
+									<th scope="col" class="bg-black-dark">soir</th>
+								</tr>
+								</thead>
+								<tbody>
+									<!--NOTE J'ai enlevé le ngFor car je pensais que c'était le pb du premier bug 
+										signaler par Bruno, mais au final ce n'était pas ça le soucis 
+										et du coup j'ai laissé le code comme ça.
+										je n'ai pas effacé le code il se trouve à l'ANCHOR  suivant -->
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[0].day}} </th>
+										<td *ngIf="horaireResponse[0].m_state" class="tab-content">
+											{{ horaireResponse[0].hm_opening }}h{{ horaireResponse[0].mm_opening }} à 
+											{{ horaireResponse[0].hm_closing }}h{{ horaireResponse[0].mm_closing }} 
+										</td>
+
+
+										<td *ngIf="horaireResponse[0].a_state" class="tab-content">
+											{{ horaireResponse[0].ha_opening }}h{{ horaireResponse[0].ma_opening }} à 
+											{{ horaireResponse[0].ha_closing }}h{{ horaireResponse[0].ma_closing }}
+										</td>
+										<td *ngIf="!horaireResponse[0].m_state" class="tab-content">
+											Fermé le midi
+										</td>
+										<td *ngIf="!horaireResponse[0].a_state" class="tab-content"> 
+											Fermé le soir
+										</td>
+									</tr>
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[1].day}}</th>
+										<td *ngIf="horaireResponse[1].m_state" class="tab-content">
+												{{ horaireResponse[1].hm_opening }}h{{ horaireResponse[1].mm_opening }} à 
+												{{ horaireResponse[1].hm_closing }}h{{ horaireResponse[1].mm_closing }} 
+											</td>
+
+											<td *ngIf="horaireResponse[1].a_state" class="tab-content">
+												{{ horaireResponse[1].ha_opening }}h{{ horaireResponse[1].ma_opening }} à 
+												{{ horaireResponse[1].ha_closing }}h{{ horaireResponse[1].ma_closing }}
+											</td>
+											<td *ngIf="!horaireResponse[1].m_state" class="tab-content">
+												Fermé le midi
+											</td>
+											<td *ngIf="!horaireResponse[1].a_state" class="tab-content"> 
+												Fermé le soir
+											</td>
+									</tr>
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[2].day}}</th>
+										<td *ngIf="horaireResponse[2].m_state" class="tab-content">
+												{{ horaireResponse[2].hm_opening }}h{{ horaireResponse[2].mm_opening }} à 
+												{{ horaireResponse[2].hm_closing }}h{{ horaireResponse[2].mm_closing }} 
+											</td>
+
+											<td *ngIf="horaireResponse[2].a_state" class="tab-content">
+												{{ horaireResponse[2].ha_opening }}h{{ horaireResponse[2].ma_opening }} à 
+												{{ horaireResponse[2].ha_closing }}h{{ horaireResponse[2].ma_closing }}
+											</td>
+											<td *ngIf="!horaireResponse[2].m_state" class="tab-content">
+												Fermé le midi
+											</td>
+											<td *ngIf="!horaireResponse[2].a_state" class="tab-content"> 
+												Fermé le soir
+											</td>
+									</tr>
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[3].day}}</th>
+										<td *ngIf="horaireResponse[3].m_state" class="tab-content">
+												{{ horaireResponse[3].hm_opening }}h{{ horaireResponse[3].mm_opening }} à 
+												{{ horaireResponse[3].hm_closing }}h{{ horaireResponse[3].mm_closing }} 
+											</td>
+
+											<td *ngIf="horaireResponse[3].a_state" class="tab-content">
+												{{ horaireResponse[3].ha_opening }}h{{ horaireResponse[3].ma_opening }} à 
+												{{ horaireResponse[3].ha_closing }}h{{ horaireResponse[3].ma_closing }}
+											</td>
+											<td *ngIf="!horaireResponse[3].m_state" class="tab-content">
+												Fermé le midi
+											</td>
+											<td *ngIf="!horaireResponse[3].a_state" class="tab-content"> 
+												Fermé le soir
+											</td>
+									</tr>
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[4].day}}</th>
+										<td *ngIf="horaireResponse[4].m_state" class="tab-content">
+												{{ horaireResponse[4].hm_opening }}h{{ horaireResponse[4].mm_opening }} à 
+												{{ horaireResponse[4].hm_closing }}h{{ horaireResponse[4].mm_closing }} 
+											</td>
+
+											<td *ngIf="horaireResponse[4].a_state" class="tab-content">
+												{{ horaireResponse[4].ha_opening }}h{{ horaireResponse[4].ma_opening }} à 
+												{{ horaireResponse[4].ha_closing }}h{{ horaireResponse[4].ma_closing }}
+											</td>
+											<td *ngIf="!horaireResponse[4].m_state" class="tab-content">
+												Fermé le midi
+											</td>
+											<td *ngIf="!horaireResponse[4].a_state" class="tab-content"> 
+												Fermé le soir
+											</td>
+									</tr>
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[5].day}}</th>
+										<td *ngIf="horaireResponse[5].m_state" class="tab-content">
+												{{ horaireResponse[5].hm_opening }}h{{ horaireResponse[5].mm_opening }} à 
+												{{ horaireResponse[5].hm_closing }}h{{ horaireResponse[5].mm_closing }} 
+											</td>
+
+											<td *ngIf="horaireResponse[5].a_state" class="tab-content">
+												{{ horaireResponse[5].ha_opening }}h{{ horaireResponse[5].ma_opening }} à 
+												{{ horaireResponse[5].ha_closing }}h{{ horaireResponse[5].ma_closing }}
+											</td>
+											<td *ngIf="!horaireResponse[5].m_state" class="tab-content">
+												Fermé le midi
+											</td>
+											<td *ngIf="!horaireResponse[5].a_state" class="tab-content"> 
+												Fermé le soir
+											</td>
+									</tr>
+									<tr>
+										<th class="bg-black-dark"> {{ horaireResponse[6].day}}</th>
+										<td *ngIf="horaireResponse[6].m_state" class="tab-content">
+												{{ horaireResponse[6].hm_opening }}h{{ horaireResponse[6].mm_opening }} à 
+												{{ horaireResponse[6].hm_closing }}h{{ horaireResponse[6].mm_closing }} 
+											</td>
+
+											<td *ngIf="horaireResponse[6].a_state" class="tab-content">
+												{{ horaireResponse[6].ha_opening }}h{{ horaireResponse[6].ma_opening }} à 
+												{{ horaireResponse[6].ha_closing }}h{{ horaireResponse[6].ma_closing }}
+											</td>
+											<td *ngIf="!horaireResponse[6].m_state" class="tab-content">
+												Fermé le midi
+											</td>
+											<td *ngIf="!horaireResponse[6].a_state" class="tab-content"> 
+												Fermé le soir
+											</td>
+									</tr>
+									<!-- REVIEW  le code avec un ngFor -->
+								<!-- <tr *ngFor="let current of horaireResponse">
+									<th class="bg-black-dark"> {{current.day}} </th>
+
+									<td *ngIf="current.m_state" class="tab-content">
+										{{ current.hm_opening }}h{{ current.mm_opening }} à 
+										{{ current.hm_closing }}h{{ current.mm_closing }} 
+									</td>
+
+									<td *ngIf="current.a_state" class="tab-content">
+										{{ current.ha_opening }}h{{ current.ma_opening }} à 
+										{{ current.ha_closing }}h{{ current.ma_closing }}
+									</td>
+									<td *ngIf="!current.m_state" class="tab-content">
+										Fermé le matin
+									</td>
+									<td *ngIf="!current.a_state" class="tab-content"> 
+										Fermé l'après-midi
+									</td>
+								</tr> -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

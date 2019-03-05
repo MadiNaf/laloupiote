@@ -1,0 +1,78 @@
+<div class="container bg-dark">
+  <div class="row text-center text-white m-3">
+    <div class="col-12"><h1>ADMINISTRATION MENU EN ANGLAIS</h1></div>
+  </div>
+</div>
+
+
+<div class="container bg-dark d-flex justify-content-center"> 
+
+  <table class="mt-5 text-white">
+      <div *ngFor="let currentTabNosmenus of menusAnglaisResponse | menusAnglais" class="mt-5 marginTopCategoryList"> 
+        <div class="mb-3 text-center mr-5">
+          <h2><textarea [(ngModel)]="currentTabNosmenus[0].category_name" class="InputWidthCategory textaligncenter"></textarea></h2>
+        </div>
+        <div class="d-flex justify-content-center mr-5 mb-3">
+          <button (click)="create(currentTabNosmenus[0])">
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </div>
+
+        <div *ngFor="let current of currentTabNosmenus; let i = index" class="categoryName text-center" >
+            <div class="row text-left table">
+                <div class= "col-lg-5 text-left mt-1">
+                    <textarea [(ngModel)]="current.name" type="text" id="name" name="name" class="InputWidth">
+                    </textarea>
+                </div>
+
+                <div class="offset-lg-1 col-lg-1 text-right mt-1">
+                  <textarea type="text" id="name" name="name"
+                  class="fontsizemobilenormaltext InputWidthPrice"
+                      [(ngModel)]="current.price">
+                  </textarea>      
+                </div>
+
+
+                <div class="offset-lg-1 col-lg-1 text-right mt-1">
+                  <button (click)="up(current, currentTabNosmenus)"><i class="fas fa-plus"></i></button>
+                  <button (click)="down(current, currentTabNosmenus)"><i class="fas fa-minus"></i></button>
+                </div>
+
+
+                <div class="col-lg-1 text-right d-flex align-items-center">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" 
+                      [attr.data-target]="'#exampleModal' + current.id">
+                      <i class="fas fa-trash-alt"></i>
+                    
+                  <!-- Modal -->
+                  <div class="modal fade textcolor" [attr.id]="'exampleModal' + current.id" tabindex="-1" role="dialog" 
+                      aria-labelledby="exampleModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header text-center">
+                            <h4 class="modal-title w-100" id="exampleModalLabel">     
+                              Voulez vous vraiment supprimer?</h4>
+                          </div>
+                          <div class="modal-footer d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+                            <button type="button" class="btn btn-success" (click)="delete(current)">Oui</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+            </button>
+              
+          </div>
+          <div class="col-lg-1 text-right d-flex align-items-center">
+            <button (click)="update(current)">
+              <i class="fas fa-check-square"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</table>
+
+</div>
+    

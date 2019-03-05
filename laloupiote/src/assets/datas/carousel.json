@@ -1,0 +1,18 @@
+{
+	"carousel":
+	[
+        {
+            "img1": "/../../assets/img/01llp.JPG"
+        },
+        {
+            "img2": "/../../assets/img/02llp.JPG"
+        },
+        {
+            "img3": "/../../assets/img/03llp.JPG"
+        },
+        {
+            "img4": "/../../assets/img/04llp.JPG"
+        }
+    ]
+}	
+

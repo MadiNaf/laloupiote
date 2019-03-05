@@ -1,0 +1,127 @@
+{
+    "horaires":[
+        {
+			"day": "lundi",
+			
+			"hm_opening": "",
+			"mm_opening": "",
+
+			"hm_closing": "",
+			"mm_closing": "",
+
+			"ha_opening": "",
+			"ma_opening": "",
+
+			"ha_closing": "",
+			"ma_closing": "",
+			
+			"m_state": false,
+			"a_state": false
+        },
+        {
+			"day":"mardi",
+			
+          	"hm_opening": "12",
+          	"mm_opening": "00",
+
+			"hm_closing": "13",
+			"mm_closing": "45",
+
+			"ha_opening": "",
+			"ma_opening": "",
+			
+			"ha_closing": "",
+			"ma_closing": "",
+			
+			"m_state": true,
+			"a_state": false
+        },
+        
+		{ 	"day":"mercredi",
+			
+			"hm_opening": "12",
+			"mm_opening": "00",
+
+			"hm_closing": "13",
+			"mm_closing": "45",
+
+			"ha_opening": "19",
+			"ma_opening": "15",
+			
+			"ha_closing": "20",
+			"ma_closing": "30",
+
+			"m_state": true,
+			"a_state": true
+        },
+        
+        {	"day":"jeudi",
+			"hm_opening": "12",
+			"mm_opening": "00",
+
+			"hm_closing": "13",
+			"mm_closing": "45",
+
+			"ha_opening": "19",
+			"ma_opening": "15",
+			
+			"ha_closing": "20",
+			"ma_closing": "30",
+
+			"m_state": true,
+			"a_state": true
+        },
+		{ 	"day":"vendredi",
+
+			"hm_opening": "12",
+			"mm_opening": "00",
+
+			"hm_closing": "13",
+			"mm_closing": "45",
+
+			"ha_opening": "19",
+			"ma_opening": "15",
+			
+			"ha_closing": "21",
+			"ma_closing": "00",
+
+			"m_state": true,
+			"a_state": true
+        },
+        { 	"day":"samedi",
+			"hm_opening": "12",
+			"mm_opening": "00",
+
+			"hm_closing": "13",
+			"mm_closing": "45",
+
+			"ha_opening": "19",
+			"ma_opening": "15",
+			
+			"ha_closing": "20",
+			"ma_closing": "30",
+
+			"m_state": true,
+			"a_state": true
+        },
+          
+		{	"day":"dimanche",
+			
+			"hm_opening": "12",
+			"mm_opening": "00",
+			  
+		  	"hm_closing": "14",
+			"mm_closing": "00",
+			  
+		  	"ha_opening": "",
+			"ma_opening": "",
+			  
+		  	"ha_closing": "",
+			"ma_closing": "",
+			  
+			"m_state": true,
+			"a_state": false
+        }
+        
+      ]
+  }

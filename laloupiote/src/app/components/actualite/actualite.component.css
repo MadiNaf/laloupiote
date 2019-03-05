@@ -1,0 +1,15 @@
+.section-content{
+	padding-top: 10em;
+	padding-bottom: 10Em;
+
+}
+.fa-file-pdf{
+	font-size: 2.5em;
+	cursor: pointer;
+}
+a:link{
+	text-decoration: #a8a8a8;
+}
+a:visited {
+	text-decoration: none;
+  }

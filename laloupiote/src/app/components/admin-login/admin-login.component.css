@@ -1,0 +1,22 @@
+#admin-login-container{
+    height: 100vh;
+}
+#admin-login{   
+    margin-top: 10%;
+    width: 50%;
+}
+
+.input-valide{
+    border-color: #35b729;
+    border-width: 1.5px;
+}
+
+.input-notvalide{
+    border-color: #ff4522;
+    border-width: 1.5px;
+}
+
+.input-helper{
+    color: #ff4522;
+    font-size: 1em;
+}

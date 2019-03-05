@@ -1,0 +1,81 @@
+{ 
+    "categoryBoissons" : [
+        { 
+            "id" : 1,
+            "name" : "bières pression"
+        },
+        { 
+            "id" : 2,
+            "name" : "bières bouteille"
+        },
+        { 
+            "id" : 3,
+            "name" : "soda et jus"
+        },
+        { 
+            "id" : 4,
+            "name" : "sirop"
+        },
+        { 
+            "id" : 5,
+            "name" : "alcool aperitif"
+        },
+        { 
+            "id" : 6,
+            "name" : "alcool cidres"
+        },
+        { 
+            "id" : 7,
+            "name" : "alcool whiskies"
+        },
+        { 
+            "id" : 8,
+            "name" : "alcool digestif"
+        },
+        { 
+            "id" : 9,
+            "name" : "pichet blanc"
+        },
+        { 
+            "id" : 10,
+            "name" : "pichet rosé"
+        },
+        { 
+            "id" : 11,
+            "name" : "pichet rouges"
+        },
+        { 
+            "id" : 12,
+            "name" : "vins blancs"
+        },
+        { 
+            "id" : 13,
+            "name" : "vins roses"
+        },
+        { 
+            "id" : 14,
+            "name" : "vins rouges"
+        },
+        { 
+            "id" : 15,
+            "name" : "champagne"
+        },
+        { 
+            "id" : 16,
+            "name" : "cocktails avec alcool"
+        },
+        { 
+            "id" : 17,
+            "name" : "cocktails sans alcool"
+        },
+        { 
+            "id" : 18,
+            "name" : "boissons chaudes"
+        },
+        { 
+            "id" : 19,
+            "name" : "eau"
+        }
+        
+    ]
+}

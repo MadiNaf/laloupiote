@@ -1,0 +1,62 @@
+.WidthTitleContainer {
+    width: 4em;
+}
+
+.categoryName {
+    font-size: 3rem;
+    font-style: oblique;
+}
+
+.category {
+    font-size: 2rem;
+    font-style: oblique;
+}
+
+.enTete {
+    font-size: 1.8rem;
+}
+
+.table {
+    font-size: 1.2rem;
+}
+
+.checkbox {
+    margin-right: 2%;
+    padding-right: 10%;
+}
+
+.InputWidth {
+    width: 22em;
+    height: 3.5em;
+    /* height: 20em; */
+    overflow-wrap: break-word; 
+}
+
+.InputWidthPrice {
+    width: 4em;
+    height: 3.5em;
+    margin-left: 3em;
+}
+
+.InputWidthCategory {
+    width: 10em;
+    text-align: center;
+}
+
+.MarginleftSquare {
+    margin-left: 0.2em;
+}
+
+.textaligncenter {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.textcolor {
+    color: black !important;
+}
+
+.textcenterimportant {
+    text-align: center !important;
+    justify-content: center !important;
+}
